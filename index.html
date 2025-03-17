@@ -1,0 +1,102 @@
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleForever Yours, Meghu ❤️title
+    link rel=stylesheet href=styles.css
+head
+body
+    div class=app-container
+    
+        !-- Password Input Section --
+        div class=password-container content-card id=passwordContainer
+            h2Enter Password to Access Contenth2
+            input type=password id=passwordInput placeholder=Enter Password class=password-input
+            button id=passwordSubmit class=submit-buttonSubmitbutton
+        div
+    
+        !-- Video Section (Initially Hidden) --
+        div id=videoContainer class=hidden content-card
+            video id=introVideo width=100% height=auto playsinline
+                source src=httpsfiles.catbox.moezvy1rv.mp4 type=videomp4
+                Your browser does not support the video tag.
+            video
+            p id=tapToPlay class=hiddenTap the video to playp
+        div
+    
+        !-- Main App Content --
+        div id=mainContent class=hidden
+            h1 id=titleForever Yours, Meghu ❤️h1
+            
+            div id=messageContainer class=content-card
+                h2🌸 A Message for You 🌸h2
+                button id=messageButton class=open-message-buttonOpen Messagebutton
+                div id=message class=hiddendiv
+            div
+    
+            div id=songContainer class=content-card
+                h2🎶 LAST SONG YOU SANG FOR ME 🎶h2
+                audio controls
+                    source src=httpsfiles.catbox.moehbykg5.mp3 type=audiomp3 
+                    Your browser does not support the audio element.
+                audio
+                p id=songLyricLine 1 of Husn lyrics...p
+            div
+    
+            div id=giftContainer class=content-card
+                h2🎁 Mystery Gift 🎁h2
+                p id=countdownUnlocks in calculating...p
+                button id=giftButton class=check-gift-buttonCheck Giftbutton
+                div id=giftMessage class=hiddendiv
+            div
+    
+            div id=questionContainer class=content-card
+                h2❓ Ask a NEETCET Question ❓h2
+                input type=text id=questionInput placeholder=Enter your question... class=question-input
+                button id=askButton class=ask-buttonAskbutton
+                div id=answerOutput class=hiddendiv
+            div
+    
+            !-- Tic Tac Toe Game --
+            div id=ticTacToeContainer class=content-card hidden
+                h2Are you Bored Meghuh2
+                div id=ticTacToeBoarddiv
+            div
+    
+            !-- Meme Generator --
+            div id=memeGeneratorContainer class=content-card
+                h2meghu the memerh2
+                button id=generateMemeButton class=generate-meme-buttongeneratebutton
+                div id=memeOutput class=meme-outputdiv
+            div
+            
+            !-- YouTube Music Player --
+            div id=musicPlayerContainer class=content-card music-player
+                h2🎵 Listen to any music kathe 🎵h2
+                input type=text id=musicSearchInput placeholder=Search for a song... class=question-input
+                button id=musicSearchButton class=ask-buttonSearchbutton
+                div id=musicResults class=hiddendiv
+                iframe id=musicPlayer class=hidden width=100% height=380 frameborder=0 allow=autoplay; encrypted-media allowfullscreeniframe
+            div
+    
+            !-- Video Navigation --
+            div id=videoNavigationContainer class=content-card
+                h2Video Navigationh2
+                div class=video-container
+                    button id=prevVideoButton class=arrow-button⬅button
+                    video id=videoPlayer width=100% height=auto playsinline
+                        source src=httpsfiles.catbox.moewheydk.mp4 type=videomp4
+                        Your browser does not support the video tag.
+                    video
+                    button id=nextVideoButton class=arrow-button➡button
+                div
+            div
+    
+        div
+    
+    div
+    
+    script src=script.jsscript
+body
+html
